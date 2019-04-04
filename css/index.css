@@ -86,18 +86,31 @@ h1 {
 
 @media (max-width:800px) {
 	.logo {
-		display: flex;
+		position: absolute;
+		top: 0;
+		left: 275px;
+		
 	}
 
 	.navigation {
-		height: 95px;
+		display: flex;
 		position: sticky;
+		height: 78px;
+		width: 100%;
+
+	}
+
+	.navigation .nav {
+		display: flex;
+		margin: 0 auto;
 	}
 }
 
 @media (max-width: 500px){
 	.logo {
 		margin: 5px 5px 10px;
+		top: 0;
+	
 	}
 
 	.navigation {
@@ -105,7 +118,17 @@ h1 {
 		flex-direction: column;
 		width: auto;
 		height: auto;
-		position: static;	
+		position: static;
+		padding-top: 48px;
+		padding-bottom: 10px;	
+	}
+
+	.navigation .nav {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+		position: static;
 	}
 }
 
@@ -114,15 +137,17 @@ a {
 	color: rgb(255, 255, 255);
 	text-align: center;
 	padding: 25px;
-	width: 100%;
 	margin: 0 auto;
 }
 
 @media (max-width:800px) {
 	a {
+		margin: auto;
+		margin-top: 36px;
 		display: flex;
-		padding: 5px 25px 0 25px;
-		margin: 0 auto -40px auto;
+		padding: 0 25px;
+		align-content: space-between;
+
 	}
 }
 
@@ -135,6 +160,7 @@ a {
 		border-bottom: 1px solid black;
 		order: 2;
 		font-size: 1.3em;
+		width: 100%;
 	}
 
 	#services {
