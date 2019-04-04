@@ -109,10 +109,10 @@ h1 {
 	.navigation {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		width: auto;
 		height: auto;
-		padding: 0;
+		padding-left: 0;
+		
 	}
 }
 
@@ -135,11 +135,9 @@ a {
 
 @media (max-width:500px){
 	a {
-		display: flex;
-		text-align: ;
+		flex-direction: column;
 		margin: 10px auto;
 		padding: 5px;
-		align-self: center;	
 		border-bottom: 1px solid black;
 	}
 }
